@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Kunjooz Bar - Cart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kunjooz Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart <span class="badge bg-primary">2</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col col-sm-12 col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">My Cart(2)</h3>
+                        <hr>
+                        <div class="row gy-4">
+                            <div class="col col-sm-12 col-md-3">
+                                <img src="https://www.vhv.rs/dpng/d/203-2030313_jack-daniels-bottle-png-whiskey-jack-daniels-3.png"
+                                    class="card-img-top" alt="..." />
+                            </div>
+                            <div class="col-sm-12 col-md-9">
+                                <h4>Jack Daniels Bottle</h4>
+                                <h6>
+                                    ₹450 &nbsp;
+                                    <strike class="text-secondary">₹456</strike> &nbsp;
+                                    <span class="text-success">₹6 Discount</span>
+                                </h6>
+                            </div>
+                            <div class="col col-sm-1">
+                                <input type="number" class="form-control text-center" value="1" />
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="btn btn-light">REMOVE</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="checkout.html" class="btn btn-lg btn-success float-end">PLACE ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Product details</h5>
+                        <hr />
+                        <div class="card-text">
+                            <div>
+                                Price(1 item)
+                                <span class="float-end">₹456</span>
+                            </div>
+                            <div>
+                                Discount
+                                <span class="text-success float-end"> - ₹6</span>
+                            </div>
+                            <div>
+                                Deliver charges
+                                <span class="text-success float-end">FREE</span>
+                            </div>
+                            <hr />
+                            <div>
+                                <b>
+                                    Total amount
+                                    <span class="float-end"> - ₹450</span>
+                                </b>
+                            </div>
+                            <hr />
+                            <div>
+                                <b class="text-success"> You'll save ₹6 on this order</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+
+</html>
